@@ -1,0 +1,45 @@
+<HTML>
+  	<head>
+      <script src = "index.js"></script>      
+      <link href = "index.css" rel = "stylesheet" type="text/css">
+    </head>
+	<BODY onload="init()" onunload="clearVars()">
+		<DIV class="parentDiv">
+			<DIV class="section" id="summaryList">
+				<span id="noTaskSpan"><h4>No task to do. Add one using the tool on the right most.</h4></span>
+				<span id="taskLabel"><h4>Your due tasks:</h4></span>
+				<ul id="toDosList">
+				</ul>
+			</DIV>
+			
+			<DIV class="section" id="addToDos">
+				<h4>Add a new task here.</h4>
+				<DIV><INPUT id="titleInput" placeholder="Task title" style="width:250px;"></INPUT></DIV>
+				<DIV><TEXTAREA id="descrTextField" placeholder="Task description" style="width:250px;"></TEXTAREA></DIV>
+				<DIV>Select priority: 
+					<select id="prioritySelect">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
+					</select>
+				</DIV>
+				<INPUT type="button" value="Add this task" onclick='taskAppObj.addThisTask()'></INPUT>
+			</DIV>
+			<DIV class="section" id="showTodo">
+				<h4>Select a task from the list on the left to view details here.</h4>
+				<DIV id="taskDisplayDiv">
+					<DIV><h5>Task Title: </h5><SPAN id="titleSpan"></SPAN></DIV>
+					<DIV><h5>Task Details: </h5><SPAN id="descrSpan"></SPAN></DIV>
+					<h5>It is a prio <SPAN id="prioritySpan"></SPAN> task.</h5>
+				</DIV>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>

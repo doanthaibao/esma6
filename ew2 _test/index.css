@@ -1,0 +1,29 @@
+/*Please include index.css in HTML code for using this.*/
+.parentDiv {
+	width: 90%;
+	height: 80%;
+}
+.hidden{
+	 visibility: hidden; 
+}
+.removeTask{
+	color: red;
+	float: right;
+}
+.section{
+	 border-style: solid;
+    border-width: 1px;
+    padding: 2px;
+}
+#summaryList{
+  float: left;
+  width:33%;
+}
+#showTodo{ 
+    margin:0 auto;
+    width: 33%;
+}
+#addToDos{
+  float: right;
+  width: 33%;
+}
